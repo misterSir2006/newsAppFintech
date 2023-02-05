@@ -22,6 +22,7 @@ class NewsViewController: UITableViewController {
     private func setupUI() {
         tableView.backgroundColor = .white
         navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
         title = "News"
         
         presenter.getData(tableView: self.tableView, page: page)
